@@ -77,11 +77,21 @@ if (userName == 'Админ') {
 * Перепишите 'if' в '?'
 * */
 
-var inputFirstNumber  = prompt('Введите первое число:');
+/*var inputFirstNumber  = prompt('Введите первое число:');
 var inputSecondNumber = prompt('Введите второе число:');
 if (inputFirstNumber != '' && inputSecondNumber != '') {
 	var parsedFirstNumber = parseInt(inputFirstNumber, 10);
 	var parsedSecondNumber = parseInt(inputSecondNumber, 10);
 	result = (parsedFirstNumber + parsedSecondNumber < 4) ? 'Мало' : 'Много';
 	alert(result);
-}
+}*/
+
+/*
+* Перепишите 'if..else' в '?'
+* */
+
+var login = prompt('Введите имя:');
+(login == 'Вася')     ? alert('Привет') :
+(login == 'Директор') ? alert('Здравствуйте') :
+(login == '')         ? alert('Нет логина') :
+alert('');
