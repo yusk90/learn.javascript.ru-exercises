@@ -90,8 +90,24 @@ if (inputFirstNumber != '' && inputSecondNumber != '') {
 * Перепишите 'if..else' в '?'
 * */
 
-var login = prompt('Введите имя:');
+/*var login = prompt('Введите имя:');
 (login == 'Вася')     ? alert('Привет') :
 (login == 'Директор') ? alert('Здравствуйте') :
 (login == '')         ? alert('Нет логина') :
-alert('');
+alert('');*/
+
+/*
+* Проверка if внутри диапазона
+* */
+
+var age = prompt('Введите число между 14 и 90 включительно:');
+
+if (age != '' && !isNaN(age)) {
+	var parsedAge = parseInt(age, 10);
+
+	if (parsedAge >= 14 && parsedAge <= 90) {
+		alert('Число находится в заданном диапазоне');
+	} else {
+		alert('Число НЕ находится в заданном диапазоне');
+	}
+}
