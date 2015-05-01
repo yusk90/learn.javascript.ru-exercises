@@ -43,11 +43,32 @@ if (languageName == 'EcmaScript') {
 * Получить знак числа
 * */
 
-var inputNumber = prompt('Введите число:');
+/*var inputNumber = prompt('Введите число:');
 if (inputNumber > 0) {
 	alert(1);
 } else if (inputNumber < 0) {
 	alert(-1);
 } else {
 	alert(0);
+}*/
+
+/*
+* Проверка логина
+* */
+
+var userName = prompt('Кто пришёл?');
+
+if (userName == 'Админ') {
+	var userPassword = prompt('Пароль?');
+	if (userPassword == 'Чёрный Властелин') {
+		alert('Добро пожаловать!');
+	} else if (userPassword == null) {
+		alert('Вход отменён');
+	} else {
+		alert('Я вас не знаю');
+	}
+} else if (userName == null) {
+	alert('Вход отменён');
+} else {
+	alert('Я вас не знаю');
 }
