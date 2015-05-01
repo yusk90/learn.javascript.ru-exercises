@@ -148,8 +148,21 @@ if (age != '' && !isNaN(age) && age != null) {
 * Выведите чётные числа
 * */
 
-for (var i = 2; i <= 10; i++) {
+/*for (var i = 2; i <= 10; i++) {
 	if (i % 2 == 0) {
 		alert(i);
 	}
+}*/
+
+/*
+* Замените for на while
+* */
+
+var i = 2;
+
+while (i <= 10) {
+	if (i % 2 == 0) {
+		alert(i);
+	}
+	i++;
 }
