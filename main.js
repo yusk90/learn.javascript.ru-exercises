@@ -8,8 +8,15 @@
  * Работа с переменными
  * */
 
-var admin;
+/*var admin;
 var name;
 name = 'Василий';
 admin = name;
-alert(admin);
+alert(admin);*/
+
+/*
+* Объявление переменных
+* */
+
+var ourPlanetName = 'Земля';
+var userName = 'Петя';
