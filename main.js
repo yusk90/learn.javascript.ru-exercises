@@ -18,5 +18,12 @@ alert(admin);*/
 * Объявление переменных
 * */
 
-var ourPlanetName = 'Земля';
-var userName = 'Петя';
+/*var ourPlanetName = 'Земля';
+var userName = 'Петя';*/
+
+/*
+* Простая страница
+* */
+
+var userName = prompt('Введите Ваше имя:');
+alert('Здравствуйте, ' + userName + '!');
