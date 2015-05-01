@@ -32,9 +32,22 @@ alert('Здравствуйте, ' + userName + '!');*/
 * Проверка стандарта
 * */
 
-var languageName = prompt('Каково «официальное» название JavaScript?');
+/*var languageName = prompt('Каково «официальное» название JavaScript?');
 if (languageName == 'EcmaScript') {
 	alert('Верно!');
 } else {
 	alert('Не знаете? «EcmaScript»!');
+}*/
+
+/*
+* Получить знак числа
+* */
+
+var inputNumber = prompt('Введите число:');
+if (inputNumber > 0) {
+	alert(1);
+} else if (inputNumber < 0) {
+	alert(-1);
+} else {
+	alert(0);
 }
