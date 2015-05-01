@@ -158,11 +158,20 @@ if (age != '' && !isNaN(age) && age != null) {
 * Замените for на while
 * */
 
-var i = 2;
+/*var i = 2;
 
 while (i <= 10) {
 	if (i % 2 == 0) {
 		alert(i);
 	}
 	i++;
-}
+}*/
+
+/*
+* Повторять цикл, пока ввод неверен
+* */
+
+do {
+	var userInputNumber = prompt('Введите число больше 100:');
+} while (userInputNumber <= 100 && userInputNumber != null);
+
