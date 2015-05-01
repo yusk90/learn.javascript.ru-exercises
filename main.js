@@ -56,7 +56,7 @@ if (inputNumber > 0) {
 * Проверка логина
 * */
 
-var userName = prompt('Кто пришёл?');
+/*var userName = prompt('Кто пришёл?');
 
 if (userName == 'Админ') {
 	var userPassword = prompt('Пароль?');
@@ -71,4 +71,17 @@ if (userName == 'Админ') {
 	alert('Вход отменён');
 } else {
 	alert('Я вас не знаю');
+}*/
+
+/*
+* Перепишите 'if' в '?'
+* */
+
+var inputFirstNumber  = prompt('Введите первое число:');
+var inputSecondNumber = prompt('Введите второе число:');
+if (inputFirstNumber != '' && inputSecondNumber != '') {
+	var parsedFirstNumber = parseInt(inputFirstNumber, 10);
+	var parsedSecondNumber = parseInt(inputSecondNumber, 10);
+	result = (parsedFirstNumber + parsedSecondNumber < 4) ? 'Мало' : 'Много';
+	alert(result);
 }
