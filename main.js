@@ -102,7 +102,7 @@ alert('');*/
 
 /*var age = prompt('Введите число между 14 и 90 включительно:');
 
-if (age != '' && !isNaN(age)) {
+if (age != '' && !isNaN(age) && age != null) {
 	var parsedAge = parseInt(age, 10);
 
 	if (parsedAge >= 14 && parsedAge <= 90) {
@@ -116,12 +116,28 @@ if (age != '' && !isNaN(age)) {
 * Проверка if вне диапазона вариант 1
 * */
 
-var age = prompt('Введите число вне диапазона 14 и 90 включительно:');
+/*var age = prompt('Введите число вне диапазона 14 и 90 включительно:');
 
-if (age != '' && !isNaN(age)) {
+if (age != '' && !isNaN(age) && age != null) {
 	var parsedAge = parseInt(age, 10);
 
 	if (!(parsedAge >= 14 && parsedAge <= 90)) {
+		alert('Число НЕ находится в заданном диапазоне');
+	} else {
+		alert('Число находится в заданном диапазоне');
+	}
+}*/
+
+/*
+ * Проверка if вне диапазона вариант 2
+ * */
+
+var age = prompt('Введите число вне диапазона 14 и 90 включительно:');
+
+if (age != '' && !isNaN(age) && age != null) {
+	var parsedAge = parseInt(age, 10);
+
+	if (parsedAge < 14 || parsedAge > 90) {
 		alert('Число НЕ находится в заданном диапазоне');
 	} else {
 		alert('Число находится в заданном диапазоне');
