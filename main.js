@@ -198,7 +198,7 @@ while (i <= 10) {
 * Напишите «if», аналогичный «switch»
 * */
 
-var browser = prompt('Введите Ваш браузер:');
+/*var browser = prompt('Введите Ваш браузер:');
 
 if (browser == 'IE') {
 	alert( 'О, да у вас IE!' );
@@ -210,4 +210,25 @@ if (browser == 'IE') {
 	alert('Да, и эти браузеры мы поддерживаем');
 }	else {
 	alert( 'Мы надеемся, что и в вашем браузере все ок!' );
+}*/
+
+/*
+* Переписать if'ы в switch
+* */
+
+var inputNumber = parseInt(prompt('a?'), 10);
+
+switch (inputNumber) {
+	case 0:
+		alert(0);
+		break;
+	case 1:
+		alert(1);
+		break;
+	case 2:
+	case 3:
+		alert('2,3');
+		break;
+	default:
+		alert('Не угадали.');
 }
