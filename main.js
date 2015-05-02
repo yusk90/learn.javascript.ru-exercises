@@ -216,7 +216,7 @@ if (browser == 'IE') {
 * Переписать if'ы в switch
 * */
 
-var inputNumber = parseInt(prompt('a?'), 10);
+/*var inputNumber = parseInt(prompt('a?'), 10);
 
 switch (inputNumber) {
 	case 0:
@@ -231,4 +231,15 @@ switch (inputNumber) {
 		break;
 	default:
 		alert('Не угадали.');
+}*/
+
+/*
+* Перепишите функцию, используя оператор '?'
+* */
+
+var userAge = parseInt(prompt('Введите Ваш возраст:'), 10);
+checkAge(userAge);
+
+function checkAge(age) {
+	return (age > 18) ? true : confirm('Родители разрешили?');
 }
