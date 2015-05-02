@@ -237,9 +237,20 @@ switch (inputNumber) {
 * Перепишите функцию, используя оператор '?'
 * */
 
-var userAge = parseInt(prompt('Введите Ваш возраст:'), 10);
+/*var userAge = parseInt(prompt('Введите Ваш возраст:'), 10);
 checkAge(userAge);
 
 function checkAge(age) {
 	return (age > 18) ? true : confirm('Родители разрешили?');
+}*/
+
+/*
+ * Перепишите функцию, используя оператор '?'
+ * */
+
+var userAge = parseInt(prompt('Введите Ваш возраст:'), 10);
+checkAge(userAge);
+
+function checkAge(age) {
+	return (age > 18) || confirm('Родители разрешили?');
 }
