@@ -171,7 +171,25 @@ while (i <= 10) {
 * Повторять цикл, пока ввод неверен
 * */
 
-do {
+/*do {
 	var userInputNumber = prompt('Введите число больше 100:');
-} while (userInputNumber <= 100 && userInputNumber != null);
+} while (userInputNumber <= 100 && userInputNumber != null);*/
 
+/*
+* Вывести простые числа - решение подсмотрел на stackoverflow
+* */
+
+for (var n = 2; n <= 10; n++) {
+	//console.log('n = ' + n);
+	for (var j = 2; j <= n; j++) {
+		//console.log('j = ' + j);
+		if (n % j == 0) {
+			//console.log('остаток от деления: n = ' + n + ' и j = ' + j + ' = 0');
+			break;
+		}
+	}
+	if (j == n) {
+		//console.log('j = ' + j + ' == n = ' + n);
+		console.log(n);
+	}
+}
