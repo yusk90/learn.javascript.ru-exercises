@@ -259,7 +259,7 @@ function checkAge(age) {
 * Функция min
 * */
 
-var firstNumber = parseInt(prompt('Введите первое число:'), 10);
+/*var firstNumber = parseInt(prompt('Введите первое число:'), 10);
 var secondNumber = parseInt(prompt('Введите второе число:'), 10);
 min(firstNumber, secondNumber);
 
@@ -271,4 +271,21 @@ function min(a, b) {
 	} else {
 		alert(a + ' меньше, чем ' + b);
 	}
+}*/
+
+/*
+* Функция pow(x,n)
+* */
+
+var number = parseInt(prompt('Введите число, которое необходимо ' +
+															'возвести в степень'), 10);
+var powerOfNumber = parseInt(prompt('Введите степень числа:'), 10);
+pow(number, powerOfNumber);
+
+function pow(number, powerOfNumber) {
+	var result = number;
+	for (var i = 1; i < powerOfNumber; i++) {
+		result *= number;
+	}
+	alert(result);
 }
