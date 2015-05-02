@@ -34,9 +34,9 @@ alert('Здравствуйте, ' + userName + '!');*/
 
 /*var languageName = prompt('Каково «официальное» название JavaScript?');
 if (languageName == 'EcmaScript') {
-	alert('Верно!');
+    alert('Верно!');
 } else {
-	alert('Не знаете? «EcmaScript»!');
+    alert('Не знаете? «EcmaScript»!');
 }*/
 
 /*
@@ -45,11 +45,11 @@ if (languageName == 'EcmaScript') {
 
 /*var inputNumber = prompt('Введите число:');
 if (inputNumber > 0) {
-	alert(1);
+    alert(1);
 } else if (inputNumber < 0) {
-	alert(-1);
+    alert(-1);
 } else {
-	alert(0);
+    alert(0);
 }*/
 
 /*
@@ -59,18 +59,18 @@ if (inputNumber > 0) {
 /*var userName = prompt('Кто пришёл?');
 
 if (userName == 'Админ') {
-	var userPassword = prompt('Пароль?');
-	if (userPassword == 'Чёрный Властелин') {
-		alert('Добро пожаловать!');
-	} else if (userPassword == null) {
-		alert('Вход отменён');
-	} else {
-		alert('Я вас не знаю');
-	}
+    var userPassword = prompt('Пароль?');
+    if (userPassword == 'Чёрный Властелин') {
+        alert('Добро пожаловать!');
+    } else if (userPassword == null) {
+        alert('Вход отменён');
+    } else {
+        alert('Я вас не знаю');
+    }
 } else if (userName == null) {
-	alert('Вход отменён');
+    alert('Вход отменён');
 } else {
-	alert('Я вас не знаю');
+    alert('Я вас не знаю');
 }*/
 
 /*
@@ -80,10 +80,10 @@ if (userName == 'Админ') {
 /*var inputFirstNumber  = prompt('Введите первое число:');
 var inputSecondNumber = prompt('Введите второе число:');
 if (inputFirstNumber != '' && inputSecondNumber != '') {
-	var parsedFirstNumber = parseInt(inputFirstNumber, 10);
-	var parsedSecondNumber = parseInt(inputSecondNumber, 10);
-	result = (parsedFirstNumber + parsedSecondNumber < 4) ? 'Мало' : 'Много';
-	alert(result);
+    var parsedFirstNumber = parseInt(inputFirstNumber, 10);
+    var parsedSecondNumber = parseInt(inputSecondNumber, 10);
+    result = (parsedFirstNumber + parsedSecondNumber < 4) ? 'Мало' : 'Много';
+    alert(result);
 }*/
 
 /*
@@ -103,13 +103,13 @@ alert('');*/
 /*var age = prompt('Введите число между 14 и 90 включительно:');
 
 if (age != '' && !isNaN(age) && age != null) {
-	var parsedAge = parseInt(age, 10);
+    var parsedAge = parseInt(age, 10);
 
-	if (parsedAge >= 14 && parsedAge <= 90) {
-		alert('Число находится в заданном диапазоне');
-	} else {
-		alert('Число НЕ находится в заданном диапазоне');
-	}
+    if (parsedAge >= 14 && parsedAge <= 90) {
+        alert('Число находится в заданном диапазоне');
+    } else {
+        alert('Число НЕ находится в заданном диапазоне');
+    }
 }*/
 
 /*
@@ -119,13 +119,13 @@ if (age != '' && !isNaN(age) && age != null) {
 /*var age = prompt('Введите число вне диапазона 14 и 90 включительно:');
 
 if (age != '' && !isNaN(age) && age != null) {
-	var parsedAge = parseInt(age, 10);
+    var parsedAge = parseInt(age, 10);
 
-	if (!(parsedAge >= 14 && parsedAge <= 90)) {
-		alert('Число НЕ находится в заданном диапазоне');
-	} else {
-		alert('Число находится в заданном диапазоне');
-	}
+    if (!(parsedAge >= 14 && parsedAge <= 90)) {
+        alert('Число НЕ находится в заданном диапазоне');
+    } else {
+        alert('Число находится в заданном диапазоне');
+    }
 }*/
 
 /*
@@ -135,13 +135,13 @@ if (age != '' && !isNaN(age) && age != null) {
 /*var age = prompt('Введите число вне диапазона 14 и 90 включительно:');
 
 if (age != '' && !isNaN(age) && age != null) {
-	var parsedAge = parseInt(age, 10);
+    var parsedAge = parseInt(age, 10);
 
-	if (parsedAge < 14 || parsedAge > 90) {
-		alert('Число НЕ находится в заданном диапазоне');
-	} else {
-		alert('Число находится в заданном диапазоне');
-	}
+    if (parsedAge < 14 || parsedAge > 90) {
+        alert('Число НЕ находится в заданном диапазоне');
+    } else {
+        alert('Число находится в заданном диапазоне');
+    }
 }*/
 
 /*
@@ -149,9 +149,9 @@ if (age != '' && !isNaN(age) && age != null) {
 * */
 
 /*for (var i = 2; i <= 10; i++) {
-	if (i % 2 == 0) {
-		alert(i);
-	}
+    if (i % 2 == 0) {
+        alert(i);
+    }
 }*/
 
 /*
@@ -161,10 +161,10 @@ if (age != '' && !isNaN(age) && age != null) {
 /*var i = 2;
 
 while (i <= 10) {
-	if (i % 2 == 0) {
-		alert(i);
-	}
-	i++;
+    if (i % 2 == 0) {
+        alert(i);
+    }
+    i++;
 }*/
 
 /*
@@ -172,7 +172,7 @@ while (i <= 10) {
 * */
 
 /*do {
-	var userInputNumber = prompt('Введите число больше 100:');
+    var userInputNumber = prompt('Введите число больше 100:');
 } while (userInputNumber <= 100 && userInputNumber != null);*/
 
 /*
@@ -180,18 +180,18 @@ while (i <= 10) {
 * */
 
 /*for (var n = 2; n <= 10; n++) {
-	//console.log('n = ' + n);
-	for (var j = 2; j <= n; j++) {
-		//console.log('j = ' + j);
-		if (n % j == 0) {
-			//console.log('остаток от деления: n = ' + n + ' и j = ' + j + ' = 0');
-			break;
-		}
-	}
-	if (j == n) {
-		//console.log('j = ' + j + ' == n = ' + n);
-		console.log(n);
-	}
+    //console.log('n = ' + n);
+    for (var j = 2; j <= n; j++) {
+        //console.log('j = ' + j);
+        if (n % j == 0) {
+            //console.log('остаток от деления: n = ' + n + ' и j = ' + j + ' = 0');
+            break;
+        }
+    }
+    if (j == n) {
+        //console.log('j = ' + j + ' == n = ' + n);
+        console.log(n);
+    }
 }*/
 
 /*
@@ -201,15 +201,15 @@ while (i <= 10) {
 /*var browser = prompt('Введите Ваш браузер:');
 
 if (browser == 'IE') {
-	alert( 'О, да у вас IE!' );
+    alert( 'О, да у вас IE!' );
 } else if (
-	browser == 'Chrome'  ||
-	browser == 'Firefox' ||
-	browser == 'Safari'  ||
-	browser == 'Opera') {
-	alert('Да, и эти браузеры мы поддерживаем');
-}	else {
-	alert( 'Мы надеемся, что и в вашем браузере все ок!' );
+    browser == 'Chrome'  ||
+    browser == 'Firefox' ||
+    browser == 'Safari'  ||
+    browser == 'Opera') {
+    alert('Да, и эти браузеры мы поддерживаем');
+} else {
+    alert( 'Мы надеемся, что и в вашем браузере все ок!' );
 }*/
 
 /*
@@ -219,18 +219,18 @@ if (browser == 'IE') {
 /*var inputNumber = parseInt(prompt('a?'), 10);
 
 switch (inputNumber) {
-	case 0:
-		alert(0);
-		break;
-	case 1:
-		alert(1);
-		break;
-	case 2:
-	case 3:
-		alert('2,3');
-		break;
-	default:
-		alert('Не угадали.');
+    case 0:
+        alert(0);
+        break;
+    case 1:
+        alert(1);
+        break;
+    case 2:
+    case 3:
+        alert('2,3');
+        break;
+    default:
+        alert('Не угадали.');
 }*/
 
 /*
@@ -241,7 +241,7 @@ switch (inputNumber) {
 checkAge(userAge);
 
 function checkAge(age) {
-	return (age > 18) ? true : confirm('Родители разрешили?');
+    return (age > 18) ? true : confirm('Родители разрешили?');
 }*/
 
 /*
@@ -252,7 +252,7 @@ function checkAge(age) {
 checkAge(userAge);
 
 function checkAge(age) {
-	return (age > 18) || confirm('Родители разрешили?');
+    return (age > 18) || confirm('Родители разрешили?');
 }*/
 
 /*
@@ -264,13 +264,13 @@ var secondNumber = parseInt(prompt('Введите второе число:'), 1
 min(firstNumber, secondNumber);
 
 function min(a, b) {
-	if (a > b) {
-		alert(b + ' меньше, чем ' + a);
-	} else if (a == b) {
-		alert('Числа равны');
-	} else {
-		alert(a + ' меньше, чем ' + b);
-	}
+    if (a > b) {
+        alert(b + ' меньше, чем ' + a);
+    } else if (a == b) {
+        alert('Числа равны');
+    } else {
+        alert(a + ' меньше, чем ' + b);
+    }
 }*/
 
 /*
@@ -278,14 +278,14 @@ function min(a, b) {
 * */
 
 var number = parseInt(prompt('Введите число, которое необходимо ' +
-															'возвести в степень'), 10);
+                              'возвести в степень'), 10);
 var powerOfNumber = parseInt(prompt('Введите степень числа:'), 10);
 pow(number, powerOfNumber);
 
 function pow(number, powerOfNumber) {
-	var result = number;
-	for (var i = 1; i < powerOfNumber; i++) {
-		result *= number;
-	}
-	alert(result);
+    var result = number;
+    for (var i = 1; i < powerOfNumber; i++) {
+        result *= number;
+    }
+    alert(result);
 }
