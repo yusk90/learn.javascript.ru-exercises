@@ -179,7 +179,7 @@ while (i <= 10) {
 * Вывести простые числа - решение подсмотрел на stackoverflow
 * */
 
-for (var n = 2; n <= 10; n++) {
+/*for (var n = 2; n <= 10; n++) {
 	//console.log('n = ' + n);
 	for (var j = 2; j <= n; j++) {
 		//console.log('j = ' + j);
@@ -192,4 +192,22 @@ for (var n = 2; n <= 10; n++) {
 		//console.log('j = ' + j + ' == n = ' + n);
 		console.log(n);
 	}
+}*/
+
+/*
+* Напишите «if», аналогичный «switch»
+* */
+
+var browser = prompt('Введите Ваш браузер:');
+
+if (browser == 'IE') {
+	alert( 'О, да у вас IE!' );
+} else if (
+	browser == 'Chrome'  ||
+	browser == 'Firefox' ||
+	browser == 'Safari'  ||
+	browser == 'Opera') {
+	alert('Да, и эти браузеры мы поддерживаем');
+}	else {
+	alert( 'Мы надеемся, что и в вашем браузере все ок!' );
 }
