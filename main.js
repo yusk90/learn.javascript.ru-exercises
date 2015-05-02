@@ -248,9 +248,27 @@ function checkAge(age) {
  * Перепишите функцию, используя оператор '?'
  * */
 
-var userAge = parseInt(prompt('Введите Ваш возраст:'), 10);
+/*var userAge = parseInt(prompt('Введите Ваш возраст:'), 10);
 checkAge(userAge);
 
 function checkAge(age) {
 	return (age > 18) || confirm('Родители разрешили?');
+}*/
+
+/*
+* Функция min
+* */
+
+var firstNumber = parseInt(prompt('Введите первое число:'), 10);
+var secondNumber = parseInt(prompt('Введите второе число:'), 10);
+min(firstNumber, secondNumber);
+
+function min(a, b) {
+	if (a > b) {
+		alert(b + ' меньше, чем ' + a);
+	} else if (a == b) {
+		alert('Числа равны');
+	} else {
+		alert(a + ' меньше, чем ' + b);
+	}
 }
