@@ -322,10 +322,10 @@ function sumTo(userInput) {
 alert(sumTo(userInput));*/
 
 /*
- * Вычислить сумму чисел до данного с использованием формулы
+ * Вычислить сумму чисел до данного с использованием рекурсии
  * */
 
-var userInput = Number(prompt('Введите число:'));
+/*var userInput = Number(prompt('Введите число:'));
 
 function sumTo(userInput) {
     if (userInput > 1) {
@@ -335,4 +335,20 @@ function sumTo(userInput) {
     }
 }
 
-alert(sumTo(userInput));
+alert(sumTo(userInput));*/
+
+/*
+ * Вычислить факториал
+ * */
+
+var userInput = Number(prompt('Введите число:'));
+
+function factorial(userInput) {
+    if (userInput > 1) {
+        return userInput * factorial(userInput - 1);
+    } else {
+        return userInput;
+    }
+}
+
+alert(factorial(userInput));
