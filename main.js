@@ -313,10 +313,26 @@ alert(sumTo(userInput));*/
 * Вычислить сумму чисел до данного с использованием формулы
 * */
 
-var userInput = Number(prompt('Введите число:'));
+/*var userInput = Number(prompt('Введите число:'));
 
 function sumTo(userInput) {
     return (1 + userInput) * userInput / 2;
+}
+
+alert(sumTo(userInput));*/
+
+/*
+ * Вычислить сумму чисел до данного с использованием формулы
+ * */
+
+var userInput = Number(prompt('Введите число:'));
+
+function sumTo(userInput) {
+    if (userInput > 1) {
+        return userInput + sumTo(userInput - 1);
+    } else {
+        return userInput;
+    }
 }
 
 alert(sumTo(userInput));
