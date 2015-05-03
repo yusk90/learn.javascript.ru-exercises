@@ -294,7 +294,7 @@ function pow(number, powerOfNumber) {
 * Вычислить сумму чисел до данного с использованием цикла
 * */
 
-var userInput = Number(prompt('Введите число:'));
+/*var userInput = Number(prompt('Введите число:'));
 var resultSum = userInput;
 
 function sumTo(n) {
@@ -305,6 +305,18 @@ function sumTo(n) {
     }
     //console.log('end resultSum = ' + resultSum);
     return resultSum;
+}
+
+alert(sumTo(userInput));*/
+
+/*
+* Вычислить сумму чисел до данного с использованием формулы
+* */
+
+var userInput = Number(prompt('Введите число:'));
+
+function sumTo(userInput) {
+    return (1 + userInput) * userInput / 2;
 }
 
 alert(sumTo(userInput));
