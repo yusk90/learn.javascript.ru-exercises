@@ -277,7 +277,7 @@ function min(a, b) {
 * Функция pow(x,n)
 * */
 
-var number = parseInt(prompt('Введите число, которое необходимо ' +
+/*var number = parseInt(prompt('Введите число, которое необходимо ' +
                               'возвести в степень'), 10);
 var powerOfNumber = parseInt(prompt('Введите степень числа:'), 10);
 pow(number, powerOfNumber);
@@ -288,4 +288,23 @@ function pow(number, powerOfNumber) {
         result *= number;
     }
     alert(result);
+}*/
+
+/*
+* Вычислить сумму чисел до данного с использованием цикла
+* */
+
+var userInput = Number(prompt('Введите число:'));
+var resultSum = userInput;
+
+function sumTo(n) {
+    for (var i = 1; i < n; i++) {
+        //console.log('i = ' + i);
+        resultSum += i;
+        //console.log('resultSum = ' + resultSum);
+    }
+    //console.log('end resultSum = ' + resultSum);
+    return resultSum;
 }
+
+alert(sumTo(userInput));
