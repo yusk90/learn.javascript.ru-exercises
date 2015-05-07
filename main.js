@@ -341,7 +341,7 @@ alert(sumTo(userInput));*/
  * Вычислить факториал
  * */
 
-var userInput = Number(prompt('Введите число:'));
+/*var userInput = Number(prompt('Введите число:'));
 
 function factorial(userInput) {
     if (userInput > 1) {
@@ -351,4 +351,18 @@ function factorial(userInput) {
     }
 }
 
-alert(factorial(userInput));
+alert(factorial(userInput));*/
+
+/*
+* Интерфейс суммы
+* */
+
+var firstNumberFromPrompt = Number(prompt('Введите первое число:'));
+var secondNumberFromPrompt = Number(prompt('Введите второе число:'));
+
+function addTwoNumbers(firstNumber, secondNumber) {
+    var result = firstNumber + secondNumber;
+    alert('Сумма равна: ' + result);
+}
+
+addTwoNumbers(firstNumberFromPrompt, secondNumberFromPrompt);
