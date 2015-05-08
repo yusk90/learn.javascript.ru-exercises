@@ -357,7 +357,7 @@ alert(factorial(userInput));*/
 * Интерфейс суммы
 * */
 
-var firstNumberFromPrompt = Number(prompt('Введите первое число:'));
+/*var firstNumberFromPrompt = Number(prompt('Введите первое число:'));
 var secondNumberFromPrompt = Number(prompt('Введите второе число:'));
 
 function addTwoNumbers(firstNumber, secondNumber) {
@@ -365,4 +365,33 @@ function addTwoNumbers(firstNumber, secondNumber) {
     alert('Сумма равна: ' + result);
 }
 
-addTwoNumbers(firstNumberFromPrompt, secondNumberFromPrompt);
+addTwoNumbers(firstNumberFromPrompt, secondNumberFromPrompt);*/
+
+/*
+* Как получить дробную часть числа?
+* */
+
+// Принимаем ввод из prompt -> приводим его к числу ->
+// получааем абсолютное значение -> переводим обратно в строку
+var numberFromPrompt = Math.abs(prompt('Введите число:')).toString();
+
+function getDecimal() {
+    if (numberFromPrompt == 0) {
+        return alert(0);
+    }
+    // Переворачиваем строку numberFromPrompt
+    var reversedNumberFromPrompt = '';
+    for (var i = numberFromPrompt.length - 1; i >= 0; i--) {
+        reversedNumberFromPrompt += numberFromPrompt.charAt(i);
+    }
+    // Обрезаем строку до точки
+    var reversedFractionalPart = parseInt(Number(reversedNumberFromPrompt)).toString();
+    // Переворачиваем дробную часть
+    var fractionalPart = '';
+    for (var j = reversedFractionalPart.length - 1; j >= 0; j--) {
+        fractionalPart += reversedFractionalPart.charAt(j);
+    }
+    alert('0.' + fractionalPart);
+}
+
+getDecimal();
