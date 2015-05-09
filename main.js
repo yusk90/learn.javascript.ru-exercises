@@ -373,7 +373,7 @@ addTwoNumbers(firstNumberFromPrompt, secondNumberFromPrompt);*/
 
 // Принимаем ввод из prompt -> приводим его к числу ->
 // получааем абсолютное значение -> переводим обратно в строку
-var numberFromPrompt = Math.abs(prompt('Введите число:')).toString();
+/*var numberFromPrompt = Math.abs(prompt('Введите число:')).toString();
 
 function getDecimal() {
     if (numberFromPrompt == 0) {
@@ -394,4 +394,18 @@ function getDecimal() {
     alert('0.' + fractionalPart);
 }
 
-getDecimal();
+getDecimal();*/
+
+/*
+* Формула Бине
+* */
+
+var numberFromPrompt = Number(prompt('Введите число:'));
+
+function fibBinet() {
+    var f = (1 + Math.sqrt(5)) / 2;
+    var fN = Math.pow(f, numberFromPrompt) / Math.sqrt(5);
+    alert(fN);
+}
+
+fibBinet();
