@@ -426,7 +426,7 @@ getRandomNumber();*/
 * Случайное число из интервала (min, max)
 * */
 
-var minNumberFromPrompt = Number(prompt('Введите минимальное число:'));
+/*var minNumberFromPrompt = Number(prompt('Введите минимальное число:'));
 var maxNumberFromPrompt = Number(prompt('Введите максимальное число:'));
 
 function getRandomNumber() {
@@ -434,4 +434,20 @@ function getRandomNumber() {
                             + minNumberFromPrompt);
 }
 
-getRandomNumber();
+getRandomNumber();*/
+
+/*
+* Случайное целое от min до max
+* */
+
+function getRandomInteger() {
+    var minNumberFromPrompt = Number(prompt('Введите минимальное число:'));
+    var maxNumberFromPrompt = Number(prompt('Введите максимальное число:'));
+    for (var i = 0; i <= 100; i++) {
+        var randomFloatNumber = Math.random() * (maxNumberFromPrompt -
+            minNumberFromPrompt + 1) + minNumberFromPrompt;
+        console.log(Math.floor(randomFloatNumber));
+    }
+}
+
+getRandomInteger();
