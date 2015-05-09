@@ -400,7 +400,7 @@ getDecimal();*/
 * Формула Бине
 * */
 
-var numberFromPrompt = Number(prompt('Введите число:'));
+/*var numberFromPrompt = Number(prompt('Введите число:'));
 
 function fibBinet() {
     var f = (1 + Math.sqrt(5)) / 2;
@@ -408,4 +408,16 @@ function fibBinet() {
     alert(fN);
 }
 
-fibBinet();
+fibBinet();*/
+
+/*
+* Случайное число из интервала (0, max)
+* */
+
+var numberFromPrompt = Number(prompt('Введите максимальное число:'));
+
+function getRandomNumber() {
+    alert(Math.random() * numberFromPrompt);
+}
+
+getRandomNumber();
