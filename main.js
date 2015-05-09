@@ -414,10 +414,24 @@ fibBinet();*/
 * Случайное число из интервала (0, max)
 * */
 
-var numberFromPrompt = Number(prompt('Введите максимальное число:'));
+/*var numberFromPrompt = Number(prompt('Введите максимальное число:'));
 
 function getRandomNumber() {
     alert(Math.random() * numberFromPrompt);
+}
+
+getRandomNumber();*/
+
+/*
+* Случайное число из интервала (min, max)
+* */
+
+var minNumberFromPrompt = Number(prompt('Введите минимальное число:'));
+var maxNumberFromPrompt = Number(prompt('Введите максимальное число:'));
+
+function getRandomNumber() {
+    alert(Math.random() * (maxNumberFromPrompt - minNumberFromPrompt)
+                            + minNumberFromPrompt);
 }
 
 getRandomNumber();
