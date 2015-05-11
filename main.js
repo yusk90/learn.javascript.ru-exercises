@@ -472,7 +472,7 @@ upperCaseFirstLetter();*/
 * Проверьте спам
 * */
 
-var stringFromPrompt = prompt('Ввести строку для проверки:');
+/*var stringFromPrompt = prompt('Ввести строку для проверки:');
 
 function checkSpam() {
     var newStr = stringFromPrompt.toLowerCase();
@@ -486,4 +486,20 @@ function checkSpam() {
     }
 }
 
-checkSpam();
+checkSpam();*/
+
+/*
+* Усечение строки
+* */
+
+var stringFromPrompt = prompt('Введите строку:');
+
+function truncate(str, maxLength) {
+    if (stringFromPrompt.length >= 20) {
+        alert(str.slice(0, maxLength - 3) + '...');
+    } else {
+        alert(stringFromPrompt);
+    }
+}
+
+truncate(stringFromPrompt, 20);
