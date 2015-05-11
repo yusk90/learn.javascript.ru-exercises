@@ -456,7 +456,7 @@ getRandomInteger();*/
 * Сделать первый символ заглавным
 * */
 
-var stringFromPrompt = prompt('Ввести строку:');
+/*var stringFromPrompt = prompt('Ввести строку:');
 
 function upperCaseFirstLetter() {
     var newStr = stringFromPrompt.charAt(0).toUpperCase();
@@ -466,4 +466,24 @@ function upperCaseFirstLetter() {
     alert(newStr);
 }
 
-upperCaseFirstLetter();
+upperCaseFirstLetter();*/
+
+/*
+* Проверьте спам
+* */
+
+var stringFromPrompt = prompt('Ввести строку для проверки:');
+
+function checkSpam() {
+    var newStr = stringFromPrompt.toLowerCase();
+
+    if (!(newStr.indexOf('viagra') == -1)) {
+        alert('спам: viagra');
+    } else if (!(newStr.indexOf('xxx') == -1)) {
+        alert('спам: xxx');
+    } else {
+        alert('Спам не найден');
+    }
+}
+
+checkSpam();
