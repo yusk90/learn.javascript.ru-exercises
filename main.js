@@ -440,7 +440,7 @@ getRandomNumber();*/
 * Случайное целое от min до max
 * */
 
-function getRandomInteger() {
+/*function getRandomInteger() {
     var minNumberFromPrompt = Number(prompt('Введите минимальное число:'));
     var maxNumberFromPrompt = Number(prompt('Введите максимальное число:'));
     for (var i = 0; i <= 100; i++) {
@@ -450,4 +450,20 @@ function getRandomInteger() {
     }
 }
 
-getRandomInteger();
+getRandomInteger();*/
+
+/*
+* Сделать первый символ заглавным
+* */
+
+var stringFromPrompt = prompt('Ввести строку:');
+
+function upperCaseFirstLetter() {
+    var newStr = stringFromPrompt.charAt(0).toUpperCase();
+    for (var i = 1; i < stringFromPrompt.length; i++) {
+        newStr += stringFromPrompt.charAt(i);
+    }
+    alert(newStr);
+}
+
+upperCaseFirstLetter();
