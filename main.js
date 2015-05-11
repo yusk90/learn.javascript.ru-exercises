@@ -508,11 +508,22 @@ truncate(stringFromPrompt, 20);*/
 * Выделить число
 * */
 
-var stringFromPrompt = prompt('Введите строку:');
+/*var stringFromPrompt = prompt('Введите строку:');
 
 function extractCurrencyValue(str) {
     var currencyValue = Number(str.slice(1));
     alert(currencyValue);
 }
 
-extractCurrencyValue(stringFromPrompt);
+extractCurrencyValue(stringFromPrompt);*/
+
+
+/*
+* Первый объект
+* */
+
+var user = {};
+user.name = 'Вася';
+user.surname = 'Петров';
+user.name = 'Сергей';
+delete user.name;
