@@ -612,7 +612,7 @@ objectPropertyMaxValue(salaries);*/
 * Умножьте численные свойства на 2
 * */
 
-var menu = {
+/*var menu = {
     width: 200,
     height: 300,
     title: "My menu"
@@ -631,4 +631,29 @@ function multiplyNumeric(obj) {
 }
 
 multiplyNumeric(menu);
-console.log(menu);
+console.log(menu);*/
+
+/*
+* Получить последний элемент массива
+* */
+
+function getRandomNumber() {
+    return (Math.random() * 10).toFixed();
+}
+
+function createArray() {
+    var arr = [],
+        i;
+    for (i = 0; i <= getRandomNumber(); i++) {
+        arr.push(i + 1);
+    }
+    return arr;
+}
+
+function getArraysLastElement(arr) {
+    return arr[arr.length - 1];
+}
+
+var myArray = createArray();
+console.log(myArray);
+console.log(getArraysLastElement(myArray));
