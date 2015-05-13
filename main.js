@@ -522,8 +522,32 @@ extractCurrencyValue(stringFromPrompt);*/
 * Первый объект
 * */
 
-var user = {};
+/*var user = {};
 user.name = 'Вася';
 user.surname = 'Петров';
 user.name = 'Сергей';
-delete user.name;
+delete user.name;*/
+
+/*
+* Определите, пуст ли объект
+* */
+
+function isEmpty(obj) {
+    var count = 0;
+    for (var propName in obj) {
+        count++;
+    }
+    if (count == 0) {
+        return 'Объект пуст';
+    } else {
+        return 'Объект имеет свойства';
+    }
+}
+
+var schedule = {};
+
+alert( isEmpty(schedule) ); // true
+
+schedule["8:30"] = "подъём";
+
+alert( isEmpty(schedule) ); // false
