@@ -557,7 +557,7 @@ alert( isEmpty(schedule) );
 * Сумма свойств
 * */
 
-var salaries = {
+/*var salaries = {
     'Вася': 100,
     'Петя': 300,
     'Даша': 250
@@ -573,4 +573,37 @@ function salariesSum(obj) {
     alert(sum);
 }
 
-salariesSum(salaries);
+salariesSum(salaries);*/
+
+/*
+* Свойство с наибольшим значением
+* */
+
+var salaries = {
+    'Вася': 200,
+    'Петя': 300,
+    'Даша': 550
+};
+
+function objectPropertyMaxValue(obj) {
+    if (isEmpty(obj)) {
+        return alert('Нет сотрудников.');
+    }
+    var maxValue = 0;
+    for (var propName in obj) {
+        if (obj[propName] > maxValue) {
+            maxValue = obj[propName];
+            var maxValueProperty = propName;
+        }
+    }
+    alert('Наибольшая зарплата у сотрудника: ' + maxValueProperty);
+}
+
+function isEmpty(obj) {
+    for (var key in obj) {
+        return false;
+    }
+    return true;
+}
+
+objectPropertyMaxValue(salaries);
