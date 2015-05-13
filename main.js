@@ -579,7 +579,7 @@ salariesSum(salaries);*/
 * Свойство с наибольшим значением
 * */
 
-var salaries = {
+/*var salaries = {
     'Вася': 200,
     'Петя': 300,
     'Даша': 550
@@ -606,4 +606,29 @@ function isEmpty(obj) {
     return true;
 }
 
-objectPropertyMaxValue(salaries);
+objectPropertyMaxValue(salaries);*/
+
+/*
+* Умножьте численные свойства на 2
+* */
+
+var menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+};
+
+function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n)
+}
+
+function multiplyNumeric(obj) {
+    for (var propName in obj) {
+        if (isNumeric(obj[propName])) {
+            obj[propName] *= 2;
+        }
+    }
+}
+
+multiplyNumeric(menu);
+console.log(menu);
