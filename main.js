@@ -532,7 +532,7 @@ delete user.name;*/
 * Определите, пуст ли объект
 * */
 
-function isEmpty(obj) {
+/*function isEmpty(obj) {
     var count = 0;
     for (var propName in obj) {
         count++;
@@ -546,8 +546,31 @@ function isEmpty(obj) {
 
 var schedule = {};
 
-alert( isEmpty(schedule) ); // true
+alert( isEmpty(schedule) );
 
 schedule["8:30"] = "подъём";
 
-alert( isEmpty(schedule) ); // false
+alert( isEmpty(schedule) );
+*/
+
+/*
+* Сумма свойств
+* */
+
+var salaries = {
+    'Вася': 100,
+    'Петя': 300,
+    'Даша': 250
+};
+
+//salaries.Дима = 500;
+
+function salariesSum(obj) {
+    var sum = 0;
+    for (var propName in obj) {
+        sum += obj[propName];
+    }
+    alert(sum);
+}
+
+salariesSum(salaries);
