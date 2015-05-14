@@ -662,8 +662,25 @@ console.log(getArraysLastElement(myArray));*/
 * Создание массива
 * */
 
-var styles = ['Джаз', 'Блюз'];
+/*var styles = ['Джаз', 'Блюз'];
 styles.push('Рок-н-Ролл');
 styles[styles.length - 2] = 'Классика';
 alert(styles.shift());
-styles.unshift('Рэп', 'Регги');
+styles.unshift('Рэп', 'Регги');*/
+
+/*
+* Получить случайное значение из массива
+* */
+
+var arr = ['Яблоко', 'Апельсин', 'Груша', 'Лимон'],
+    max = arr.length - 1,
+    min = 0,
+    rand;
+
+rand = min + Math.floor(Math.random() * (max + 1 - min));
+
+function getRandomElementOfArray(arr) {
+    return arr[rand];
+}
+
+alert(getRandomElementOfArray(arr));
