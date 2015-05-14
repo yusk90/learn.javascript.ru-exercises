@@ -637,7 +637,7 @@ console.log(menu);*/
 * Получить последний элемент массива
 * */
 
-function getRandomNumber() {
+/*function getRandomNumber() {
     return (Math.random() * 10).toFixed();
 }
 
@@ -656,4 +656,14 @@ function getArraysLastElement(arr) {
 
 var myArray = createArray();
 console.log(myArray);
-console.log(getArraysLastElement(myArray));
+console.log(getArraysLastElement(myArray));*/
+
+/*
+* Создание массива
+* */
+
+var styles = ['Джаз', 'Блюз'];
+styles.push('Рок-н-Ролл');
+styles[styles.length - 2] = 'Классика';
+alert(styles.shift());
+styles.unshift('Рэп', 'Регги');
