@@ -672,7 +672,7 @@ styles.unshift('Рэп', 'Регги');*/
 * Получить случайное значение из массива
 * */
 
-var arr = ['Яблоко', 'Апельсин', 'Груша', 'Лимон'],
+/*var arr = ['Яблоко', 'Апельсин', 'Груша', 'Лимон'],
     max = arr.length - 1,
     min = 0,
     rand;
@@ -683,4 +683,37 @@ function getRandomElementOfArray(arr) {
     return arr[rand];
 }
 
-alert(getRandomElementOfArray(arr));
+alert(getRandomElementOfArray(arr));*/
+
+/*
+* Создайте калькулятор для введённых значений
+* */
+
+var numberFromPrompt,
+    arrayForPromptNumbers = [];
+
+function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n)
+}
+
+function getArrayFromPromptNumbers() {
+    do {
+        numberFromPrompt = prompt('Введите число:');
+        if (isNumeric(numberFromPrompt)) {
+            arrayForPromptNumbers.push(numberFromPrompt);
+        }
+    } while (isNumeric(numberFromPrompt) && !(numberFromPrompt == null));
+    return arrayForPromptNumbers;
+}
+
+function getSumOfNumbers() {
+    var sum = 0,
+        i;
+    for (i = 0; i < arrayForPromptNumbers.length; i++) {
+        sum += Number(arrayForPromptNumbers[i]);
+    }
+    return sum;
+}
+
+console.log(getArrayFromPromptNumbers());
+console.log(getSumOfNumbers());
