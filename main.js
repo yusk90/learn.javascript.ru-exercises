@@ -689,7 +689,7 @@ alert(getRandomElementOfArray(arr));*/
 * Создайте калькулятор для введённых значений
 * */
 
-var numberFromPrompt,
+/*var numberFromPrompt,
     arrayForPromptNumbers = [];
 
 function isNumeric(n) {
@@ -703,17 +703,41 @@ function getArrayFromPromptNumbers() {
             arrayForPromptNumbers.push(numberFromPrompt);
         }
     } while (isNumeric(numberFromPrompt) && !(numberFromPrompt == null));
+
     return arrayForPromptNumbers;
 }
 
 function getSumOfNumbers() {
     var sum = 0,
         i;
+
     for (i = 0; i < arrayForPromptNumbers.length; i++) {
         sum += Number(arrayForPromptNumbers[i]);
     }
+
     return sum;
 }
 
 console.log(getArrayFromPromptNumbers());
-console.log(getSumOfNumbers());
+console.log(getSumOfNumbers());*/
+
+/*
+* Поиск в массиве
+* */
+
+var arr = ['test', 2, 1.5, false];
+
+function findElementInArray(arr, value) {
+    var i;
+
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] === value) return i;
+    }
+
+    return -1;
+}
+
+console.log(findElementInArray(arr, 'test'));
+console.log(findElementInArray(arr, 2));
+console.log(findElementInArray(arr, 1.5));
+console.log(findElementInArray(arr, 0));
