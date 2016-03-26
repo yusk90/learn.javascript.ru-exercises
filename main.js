@@ -8,8 +8,8 @@
  * Работа с переменными
  * */
 
-/*var admin;
-var name;
+/*var admin,
+    name;
 name = 'Василий';
 admin = name;
 alert(admin);*/
@@ -18,8 +18,8 @@ alert(admin);*/
 * Объявление переменных
 * */
 
-/*var ourPlanetName = 'Земля';
-var userName = 'Петя';*/
+/*var ourPlanetName = 'Земля',
+    userName = 'Петя';*/
 
 /*
 * Простая страница
@@ -56,10 +56,11 @@ if (inputNumber > 0) {
 * Проверка логина
 * */
 
-/*var userName = prompt('Кто пришёл?');
+/*var userName = prompt('Кто пришёл?'),
+    userPassword;
 
 if (userName == 'Админ') {
-    var userPassword = prompt('Пароль?');
+    userPassword = prompt('Пароль?');
     if (userPassword == 'Чёрный Властелин') {
         alert('Добро пожаловать!');
     } else if (userPassword == null) {
@@ -77,20 +78,14 @@ if (userName == 'Админ') {
 * Перепишите 'if' в '?'
 * */
 
-/*var inputFirstNumber  = prompt('Введите первое число:');
-var inputSecondNumber = prompt('Введите второе число:');
-if (inputFirstNumber != '' && inputSecondNumber != '') {
-    var parsedFirstNumber = parseInt(inputFirstNumber, 10);
-    var parsedSecondNumber = parseInt(inputSecondNumber, 10);
-    result = (parsedFirstNumber + parsedSecondNumber < 4) ? 'Мало' : 'Много';
-    alert(result);
-}*/
+// result = (a + b < 4) ? 'Мало' : 'Много';
 
 /*
 * Перепишите 'if..else' в '?'
 * */
 
 /*var login = prompt('Введите имя:');
+
 (login == 'Вася')     ? alert('Привет') :
 (login == 'Директор') ? alert('Здравствуйте') :
 (login == '')         ? alert('Нет логина') :
@@ -100,10 +95,11 @@ alert('');*/
 * Проверка if внутри диапазона
 * */
 
-/*var age = prompt('Введите число между 14 и 90 включительно:');
+/*var age = prompt('Введите число между 14 и 90 включительно:'),
+    parsedAge;
 
 if (age != '' && !isNaN(age) && age != null) {
-    var parsedAge = parseInt(age, 10);
+    parsedAge = parseInt(age, 10);
 
     if (parsedAge >= 14 && parsedAge <= 90) {
         alert('Число находится в заданном диапазоне');
@@ -116,10 +112,11 @@ if (age != '' && !isNaN(age) && age != null) {
 * Проверка if вне диапазона вариант 1
 * */
 
-/*var age = prompt('Введите число вне диапазона 14 и 90 включительно:');
+/*var age = prompt('Введите число вне диапазона 14 и 90 включительно:'),
+    parsedAge;
 
 if (age != '' && !isNaN(age) && age != null) {
-    var parsedAge = parseInt(age, 10);
+    parsedAge = parseInt(age, 10);
 
     if (!(parsedAge >= 14 && parsedAge <= 90)) {
         alert('Число НЕ находится в заданном диапазоне');
@@ -132,10 +129,11 @@ if (age != '' && !isNaN(age) && age != null) {
  * Проверка if вне диапазона вариант 2
  * */
 
-/*var age = prompt('Введите число вне диапазона 14 и 90 включительно:');
+/*var age = prompt('Введите число вне диапазона 14 и 90 включительно:'),
+    parsedAge;
 
 if (age != '' && !isNaN(age) && age != null) {
-    var parsedAge = parseInt(age, 10);
+    parsedAge = parseInt(age, 10);
 
     if (parsedAge < 14 || parsedAge > 90) {
         alert('Число НЕ находится в заданном диапазоне');
@@ -158,12 +156,10 @@ if (age != '' && !isNaN(age) && age != null) {
 * Замените for на while
 * */
 
-/*var i = 2;
+/*var i = 0;
 
-while (i <= 10) {
-    if (i % 2 == 0) {
-        alert(i);
-    }
+while (i < 3) {
+    alert('номер ' + i + '!' );
     i++;
 }*/
 
@@ -171,25 +167,25 @@ while (i <= 10) {
 * Повторять цикл, пока ввод неверен
 * */
 
-/*do {
-    var userInputNumber = prompt('Введите число больше 100:');
+/*var userInputNumber;
+
+do {
+    userInputNumber = prompt('Введите число больше 100:');
 } while (userInputNumber <= 100 && userInputNumber != null);*/
 
 /*
-* Вывести простые числа - решение подсмотрел на stackoverflow
+* Вывести простые числа
 * */
 
-/*for (var n = 2; n <= 10; n++) {
-    //console.log('n = ' + n);
-    for (var j = 2; j <= n; j++) {
-        //console.log('j = ' + j);
+/*var n, j;
+
+for (n = 2; n <= 10; n++) {
+    for (j = 2; j <= n; j++) {
         if (n % j == 0) {
-            //console.log('остаток от деления: n = ' + n + ' и j = ' + j + ' = 0');
             break;
         }
     }
     if (j == n) {
-        //console.log('j = ' + j + ' == n = ' + n);
         console.log(n);
     }
 }*/
@@ -238,30 +234,31 @@ switch (inputNumber) {
 * */
 
 /*var userAge = parseInt(prompt('Введите Ваш возраст:'), 10);
-checkAge(userAge);
 
 function checkAge(age) {
     return (age > 18) ? true : confirm('Родители разрешили?');
-}*/
+}
+
+checkAge(userAge);*/
 
 /*
- * Перепишите функцию, используя оператор '?'
+ * Перепишите функцию, используя оператор '||'
  * */
 
 /*var userAge = parseInt(prompt('Введите Ваш возраст:'), 10);
-checkAge(userAge);
 
 function checkAge(age) {
     return (age > 18) || confirm('Родители разрешили?');
-}*/
+}
+
+checkAge(userAge);*/
 
 /*
 * Функция min
 * */
 
-/*var firstNumber = parseInt(prompt('Введите первое число:'), 10);
-var secondNumber = parseInt(prompt('Введите второе число:'), 10);
-min(firstNumber, secondNumber);
+/*var firstNumber = parseInt(prompt('Введите первое число:'), 10),
+    secondNumber = parseInt(prompt('Введите второе число:'), 10);
 
 function min(a, b) {
     if (a > b) {
@@ -271,39 +268,47 @@ function min(a, b) {
     } else {
         alert(a + ' меньше, чем ' + b);
     }
-}*/
+}
+
+min(firstNumber, secondNumber);*/
 
 /*
 * Функция pow(x,n)
 * */
 
-/*var number = parseInt(prompt('Введите число, которое необходимо ' +
-                              'возвести в степень'), 10);
-var powerOfNumber = parseInt(prompt('Введите степень числа:'), 10);
-pow(number, powerOfNumber);
+/*var number = parseInt(prompt('Введите число, которое необходимо возвести в степень'), 10),
+    powerOfNumber = parseInt(prompt('Введите степень числа:'), 10);
 
 function pow(number, powerOfNumber) {
-    var result = number;
-    for (var i = 1; i < powerOfNumber; i++) {
+    var result,
+        i;
+
+    if (number <= 0) {
+        alert('Функция поддерживает только натуральные значения');
+        return;
+    }
+    result = number;
+    for (i = 1; i < powerOfNumber; i++) {
         result *= number;
     }
     alert(result);
-}*/
+}
+
+pow(number, powerOfNumber);*/
 
 /*
 * Вычислить сумму чисел до данного с использованием цикла
 * */
 
 /*var userInput = Number(prompt('Введите число:'));
-var resultSum = userInput;
 
 function sumTo(n) {
-    for (var i = 1; i < n; i++) {
-        //console.log('i = ' + i);
+    var resultSum = 0,
+        i;
+
+    for (i = 1; i <= n; i++) {
         resultSum += i;
-        //console.log('resultSum = ' + resultSum);
     }
-    //console.log('end resultSum = ' + resultSum);
     return resultSum;
 }
 
@@ -315,8 +320,8 @@ alert(sumTo(userInput));*/
 
 /*var userInput = Number(prompt('Введите число:'));
 
-function sumTo(userInput) {
-    return (1 + userInput) * userInput / 2;
+function sumTo(n) {
+    return (1 + n) * n / 2;
 }
 
 alert(sumTo(userInput));*/
@@ -327,11 +332,11 @@ alert(sumTo(userInput));*/
 
 /*var userInput = Number(prompt('Введите число:'));
 
-function sumTo(userInput) {
-    if (userInput > 1) {
-        return userInput + sumTo(userInput - 1);
+function sumTo(n) {
+    if (n > 1) {
+        return n + sumTo(n - 1);
     } else {
-        return userInput;
+        return n;
     }
 }
 
@@ -343,15 +348,32 @@ alert(sumTo(userInput));*/
 
 /*var userInput = Number(prompt('Введите число:'));
 
-function factorial(userInput) {
-    if (userInput > 1) {
-        return userInput * factorial(userInput - 1);
+function factorial(n) {
+    if (n > 1) {
+        return n * factorial(n - 1);
     } else {
-        return userInput;
+        return n;
     }
 }
 
 alert(factorial(userInput));*/
+
+/*
+* Числа Фибоначчи
+* */
+
+/*function fib(n) {
+    var a = 1,
+        b = 1,
+        c;
+        
+    for (var i = 3; i <= n; i++) {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return b;
+}*/
 
 /*
 * Интерфейс суммы
